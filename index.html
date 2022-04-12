@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <div class="heading" style="background-color: black;">
+        <h3 style="font-size: 30px;color: aqua;"> <br>MAULANA AZAD NATIONAL INSTITIUTE OF TECHNOLOGY,Bhopal </h4>
+        <h5  style="font-size: 22px;color: rgb(11, 160, 160);"> ANALYSIS OF SORTING ALGORITHMS WITH QUIZ  </h5>
+        
+
+</div>
+
+</head>
+<body>
+   
+    <header>
+        
+        <nav style="background-color: black;">
+        
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=2>
+                <button id="a_generate"><h1 style="font-size: 14px">Generate New Array!</h1></button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+                
+                <div class="gototest">
+                <!-- <a href="quizofdsa.html">Start Quiz </a> -->
+                <style>
+                    a:link, a:visited {
+                      background-color: #f44336;
+                      color: white;
+                      padding: 14px 40px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                    }
+                    
+                    a:hover, a:active {
+                      background-color: red;
+                    }
+                    </style>
+                    <!-- </head> -->
+                    <!-- <body> -->
+                    
+                   
+                    <a href="quizofdsa.html">Start Quiz</a>
+                </div>
+                
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>
+                </div>
+            </div>
+
+        </nav>
+        
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <!-- <p>This is First Container</p> -->
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p>This is Second Container</p>
+        </div>
+
+    </section>
+
+    
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+
+</html>
